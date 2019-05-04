@@ -7,7 +7,10 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit some common Pixel Experience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+#$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -18,4 +21,8 @@ PRODUCT_CHARACTERISTICS := phone
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 TARGET_ARCH := arm
 TARGET_DENSITY := hdpi
-TARGET_GAPPS_ARCH := arm
+#TARGET_GAPPS_ARCH := arm
+
+TARGET_SHIPS_SEPERATE_GAPPS_BUILD := false
+WITH_GAPPS := false
+IS_PHONE := true
