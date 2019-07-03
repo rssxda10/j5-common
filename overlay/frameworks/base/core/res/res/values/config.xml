@@ -271,6 +271,15 @@
      <!-- Disable AOD by default -->
      <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
+     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
+     <bool name="config_dozePulsePickup">true</bool>
+
+     <!-- Default value for proximity check on screen wake
+          NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
+     <bool name="config_proximityCheckOnWake">true</bool>
+     <integer name="config_proximityCheckTimeout">200</integer>
+     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+
      <!-- Whether device can force navbar disabling -->
      <bool name="config_canForceDisableNavigationBar">true</bool>
 
