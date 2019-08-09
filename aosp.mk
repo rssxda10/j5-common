@@ -22,3 +22,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 TARGET_ARCH := arm
 TARGET_DENSITY := hdpi
 TARGET_GAPPS_ARCH := arm
+
+# J5 is a low-end device, include minimal and Go apps
+IS_GO_VERSION := true
+TARGET_MINIMAL_APPS := true
