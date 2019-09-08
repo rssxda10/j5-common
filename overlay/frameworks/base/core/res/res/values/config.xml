@@ -361,4 +361,7 @@
           services/core/java/com/android/server/policy/policy/impl/PhoneWindowManager.java -->
 
      <integer name="config_longPressOnAppSwitchBehavior">9</integer>
+
+    <!-- True if the firmware supports connected MAC randomization -->
+    <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
 </resources>
