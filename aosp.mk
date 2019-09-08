@@ -26,3 +26,6 @@ TARGET_GAPPS_ARCH := arm
 # J5 is a low-end device, include minimal and Go apps
 IS_GO_VERSION := true
 TARGET_MINIMAL_APPS := true
+
+# Installs gsi keys into ramdisk, to boot a GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
